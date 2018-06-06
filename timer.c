@@ -26,7 +26,7 @@
 
 #include "timer.h"
 
-static uint32_t Timer_ticks;
+static volatile uint32_t Timer_ticks;
 
 static Pit_Config Timer_config = {
     .number    = WARCOMEB_TIMER_NUMBER,
